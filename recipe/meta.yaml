@@ -1,13 +1,13 @@
 {% set name = "streamlit-keyup" %}
-{% set version = "0.2.4" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/streamlit-keyup-{{ version }}.tar.gz
-  sha256: ca5a050bcca339f1099ae89d053ed19310ae3d74d764fcd71493a53372819d96
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 8595a14892423243669e5d50e982853ffb7eb201b65952a48676133ab9bbc937
 
 build:
   noarch: python

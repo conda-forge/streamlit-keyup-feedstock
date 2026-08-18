@@ -35,11 +35,6 @@ tests:
       python_version:
         - ${{ python_min }}.*
         - "*"
-  - requirements:
-      run:
-        - python ${{ python_min }}.*
-    script:
-      - export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
 
 about:
   summary: Streamlit text input that returns value on keyup

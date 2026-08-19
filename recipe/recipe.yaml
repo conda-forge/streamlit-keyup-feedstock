@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: streamlit-keyup
-  version: "0.4.0"
+  version: "1.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 193c7fcd204695375024612e0506f3398421a1bc298830e45275e310352d8709
+  sha256: 1ebda9aa4c715357b6a7abeb7328bcddde1175b905b88035cc4192df6c9ca535
 
 build:
   number: 0
